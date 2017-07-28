@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   include Pundit
   protect_from_forgery with: :exception
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
-
+  #Crowdbotics
   private
     # Overwriting the sign_out redirect path method
     def after_sign_out_path_for(resource_or_scope)
